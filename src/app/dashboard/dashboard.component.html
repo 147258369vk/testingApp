@@ -1,0 +1,51 @@
+<mat-card>
+  <h1 class="heading">Dashboard</h1>
+  <br>
+  <span class="mr-2"><mat-icon>person</mat-icon></span>
+  <span class="user">Welcome {{userData.data?.name}}</span>
+  <br><br>
+  <button mat-raised-button  type="button" class="btnstyle mr-2" (click)="editprofile()"><i class="fa fa-user mr-2" aria-hidden="true"></i>Edit Profile</button>
+  <button mat-raised-button type="button" class="btnstyle mr-2" (click)="addExp()"><i class="fa fa-briefcase mr-2" aria-hidden="true"></i>Add Experience</button>
+  <button mat-raised-button  type="button" class="btnstyle" (click)="addEdu()"><i class="fa fa-graduation-cap mr-2" aria-hidden="true"></i>Add Education</button>
+
+  <br><br><br><br>
+
+  <h1 class="subHeading">Experience Credentials</h1>
+  <br>
+
+
+  <table class="table">
+    <thead class="thead-light table-bordered">
+    <tr>
+      <th>Company</th>
+      <th>Title</th>
+      <th>years</th>
+      <th></th>
+    </tr>
+  </thead>
+  </table>
+
+  <br><br>
+
+  <h1 class="subHeading">Education Credentials</h1>
+  <br>
+
+
+  <table class="table">
+    <thead class="thead-light table-bordered">
+    <tr>
+      <th>School</th>
+      <th>Degree</th>
+      <th>years</th>
+      <th></th>
+    </tr>
+  </thead>
+  </table>
+
+
+  <br><br>
+
+  <button mat-raised-button class="btndel"><mat-icon class="btndel mr-1">delete</mat-icon>Delete My Account</button>
+
+
+</mat-card>

@@ -1,0 +1,95 @@
+mat-card
+{
+  margin:20px auto;
+  width:80%;
+  background-color:#F8F9F9 ;
+  padding-top:25px;
+
+}
+mat-toolbar
+{
+  background-color:#F8F9F9;
+  border-radius: 2px;
+  font-size:25px;
+  color:#2E86C1
+}
+mat-form-field
+{
+ width:100%;
+ font-size:15px;
+}
+p
+{
+  opacity: 0.4;
+  font-weight: 400;
+}
+.mainHeading
+{
+  font-size: 40px;
+  color:#2E86C1;
+  font-weight: 500;
+  margin-left:20px;
+}
+.subContent
+{
+  font-size:25px;
+}
+.subText
+{
+  opacity: 0.9;
+}
+mat-icon
+{
+  font-size:30px;
+}
+span
+{
+  padding-left:10px;
+}
+span.icon
+{
+  vertical-align:middle;
+}
+
+
+.full-width
+{
+  width: 100%;
+}
+.linksInput
+{
+  width:80px;
+  text-align: center;
+}
+.fa-twitter
+{
+  color:#3498DB
+}
+.fa-facebook-official
+{
+  color:#1F618D;
+}
+.fa-linkedin-square
+{
+  color:#3e89bb;
+}
+.fa-youtube-play
+{
+  color:#E74C3C;
+}
+
+
+.fa-instagram
+{
+  color:#2E86C1 ;
+}
+header{
+  width:100%;
+  min-height: max-content;
+  top:0px;
+  position:sticky;
+}
+main{
+width:100%
+}
+

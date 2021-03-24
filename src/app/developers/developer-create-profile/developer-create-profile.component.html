@@ -1,0 +1,196 @@
+<header><app-usermenu></app-usermenu></header>
+
+<mat-card>
+<div class="container main">
+<h1 class="mainHeading">Create Your Profile</h1><br>
+<h3 class="subContent"><span class="icon"><mat-icon>person</mat-icon></span>
+  <span>Let's get some information to make your profile stand out</span></h3>
+<br>
+<br>
+<p class="subText">*=required field</p>
+  </div>
+
+  <br><br>
+
+  <div class="container">
+
+
+<form>
+
+        <mat-form-field>
+        <mat-select placeholder="*Select Professional Status">
+          <mat-option value="one">Developer</mat-option>
+          <mat-option value="two">Junior Developer</mat-option>
+          <mat-option value="two">Senior Developer</mat-option>
+          <mat-option value="two">Manager</mat-option>
+          <mat-option value="two">Student or Learning</mat-option>
+          <mat-option value="two">Instructor or Teacher</mat-option>
+          <mat-option value="two">Intern</mat-option>
+          <mat-option value="two">Other</mat-option>
+
+        </mat-select>
+      </mat-form-field>
+
+        <p>Give us an idea of where you are at in your career</p>
+
+        <br>
+
+        <mat-form-field>
+          <input
+          matInput
+          type="text"
+          placeholder="Company"
+          name="companyName">
+        </mat-form-field>
+
+        <p>Could be your company or one you work for</p>
+
+        <br>
+
+        <mat-form-field>
+          <input
+          matInput
+          type="text"
+          placeholder="Company Website"
+          name="companyWebsite">
+        </mat-form-field>
+        <p>Could be your own or a company website</p>
+
+        <br>
+
+        <mat-form-field>
+          <input
+          matInput
+          type="text"
+          placeholder="City"
+          name="city">
+        </mat-form-field>
+        <p>City & state suggested (eg. Boston, MA)</p>
+
+        <br>
+        <mat-form-field>
+          <input
+          matInput
+          type="text"
+          placeholder="Skills"
+          name="skills">
+        </mat-form-field>
+        <p>Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)</p>
+
+        <br>
+        <mat-form-field>
+          <input
+          matInput
+          type="text"
+          placeholder="GitHub Username"
+          name="githubusername">
+        </mat-form-field>
+        <p>If you want your latest repos and a Github link, include your username</p>
+
+        <br>
+        <mat-form-field>
+          <textarea
+          matInput
+          type="text"
+          placeholder="A short bio of yourself">
+          </textarea>
+        </mat-form-field>
+        <p>Tell us a little about yourself</p>
+
+        <br>
+        <button type="button" mat-raised-button (click)="displayLinks()">Add Social Links</button> <span>Optional</span>
+        <br><br>
+
+        <div class="container" *ngIf="showLinks">
+
+          <!-- <div class="row">
+            <div class="col-md-1">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+
+            <div class="col-md-10 ml-0">
+              <input
+              type="text"
+              matInput
+              placeholder="Twitter URL"
+              name="twitter">
+            </div> -->
+
+          <table class="full-width" cellspacing="0" cellpadding="0">
+            <tr>
+             <td class="linksInput"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></td>
+            <td>
+              <mat-form-field> <input
+              type="text"
+              matInput
+              placeholder="Twitter URL"
+              name="twitter"></mat-form-field>
+            </td>
+            </tr>
+
+            <tr>
+              <td class="linksInput"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></td>
+             <td>
+               <mat-form-field><input
+               type="text"
+               matInput
+               placeholder="Facebook URL"
+               name="twitter"></mat-form-field></td>
+             </tr>
+
+             <tr>
+              <td class="linksInput"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></td>
+             <td>
+            <mat-form-field> <input
+               type="text"
+               matInput
+               placeholder="LinkedIn URL"
+               name="linkedin">
+              </mat-form-field>
+            </td>
+             </tr>
+
+             <tr>
+              <td class="linksInput"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></td>
+             <td>
+            <mat-form-field> <input
+               type="text"
+               matInput
+               placeholder="Youtube URL"
+               name="youtube">
+              </mat-form-field>
+            </td>
+             </tr>
+
+             <tr>
+              <td class="linksInput"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></td>
+             <td>
+            <mat-form-field> <input
+               type="text"
+               matInput
+               placeholder="Instagram URL"
+               name="instagram">
+              </mat-form-field>
+            </td>
+             </tr>
+
+
+
+          </table>
+
+
+
+
+
+
+
+        </div>
+        <br>
+        <button class="mr-3" mat-raised-button color="primary" type="submit">Submit</button>
+
+        <button type="button" mat-raised-button>Go Back</button>
+
+    </form>
+  </div>
+
+</mat-card>

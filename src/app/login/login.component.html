@@ -1,0 +1,43 @@
+<div class="container-fluid"><app-menu></app-menu></div>
+
+<mat-card>
+
+  <mat-toolbar> <h1 class="mainHeading ml-0">Sign In </h1>  </mat-toolbar>
+   <mat-toolbar> <h3 class="subContent"><span class="icon mr-1"><mat-icon>person</mat-icon>
+     </span>
+   <span>Sign into Your Account</span></h3>
+   </mat-toolbar>
+   <br><br>
+   <form #loginform="ngForm" (ngSubmit)="onlogin(loginform)">
+     <mat-form-field>
+       <input
+       type="text"
+       name="email"
+       placeholder="Email"
+       matInput
+       email="ngModel"
+       [(ngModel)]="userservice.existingUser.email">
+     </mat-form-field>
+
+
+     <mat-form-field>
+       <input
+       type="password"
+       name="password"
+       matInput
+       password="ngModel"
+       placeholder="Password"
+       [(ngModel)]="userservice.existingUser.password"
+       >
+     </mat-form-field>
+     <br><br>
+
+
+     <button type="submit" class="btn btn-primary">Login</button>
+   </form>
+   <br>
+   <br>
+   <p>Don't have an account? <a routerLink='/register'>Sign Up</a></p>
+
+
+ </mat-card>

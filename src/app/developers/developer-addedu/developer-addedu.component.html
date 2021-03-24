@@ -1,0 +1,94 @@
+<header><app-usermenu></app-usermenu></header>
+
+
+<mat-card>
+  <br>
+  <div class="container main">
+    <mat-toolbar>
+  <h1 class="mainHeading ml-0">Add Your Education</h1>  </mat-toolbar>
+  <mat-toolbar> <h3 class="subContent"><span class="icon mr-3"><mat-icon>school</mat-icon>
+    </span>
+  <span>Add any school, bootcamp, etc that you have attended</span></h3>
+  </mat-toolbar>
+  <br>
+  <br>
+  <p class="subText">*=required field</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+
+  <form>
+      <mat-form-field>
+            <input
+            matInput
+            type="text"
+            placeholder="*School or Bootcamp"
+            name="school">
+          </mat-form-field>
+
+          <br>
+
+          <mat-form-field>
+            <input
+            matInput
+            type="text"
+            placeholder="*Degree or Certificate"
+            name="degree">
+          </mat-form-field>
+
+          <br>
+
+          <mat-form-field>
+            <input
+            matInput
+            type="text"
+            placeholder="Field of Study"
+            name="fieldofstudy">
+          </mat-form-field>
+
+            <br>
+            <mat-form-field>
+              <mat-label>From date</mat-label>
+              <input matInput [matDatepicker]="picker">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+
+          <br>     <br>
+
+          <mat-checkbox color="primary" #inputCheck [checked]="checked">Current School or Bootcamp</mat-checkbox>
+
+
+          <br>
+          <br>
+          <mat-form-field>
+            <mat-label>To date</mat-label>
+            <input matInput [matDatepicker]="picker_to_date" [disabled]="inputCheck.checked">
+            <mat-datepicker-toggle matSuffix [for]="picker_to_date"></mat-datepicker-toggle>
+            <mat-datepicker #picker_to_date></mat-datepicker>
+          </mat-form-field>
+          <br>
+
+
+
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Program Description</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
+
+        <br>
+
+          <button class="mr-3" mat-raised-button color="primary" type="submit">Submit</button>
+
+          <button type="button" mat-raised-button (click)="back()">Go Back</button>
+
+
+      </form>
+    </div>
+
+  </mat-card>
+

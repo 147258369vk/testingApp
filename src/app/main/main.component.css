@@ -1,0 +1,31 @@
+header{
+  position:sticky;
+  top:0px;
+  width:100%
+}
+
+main{
+  min-height: 680px;
+  text-align: center;
+  vertical-align: middle;
+  background-image:url('../../assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  color:white;
+
+}
+h1
+{
+  font-size:50px
+}
+h3
+{
+  font-size: 25px;
+}
+
+.content
+{
+  padding:50px;
+  opacity: 0.8;
+}

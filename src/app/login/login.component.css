@@ -1,0 +1,44 @@
+mat-card
+{
+  margin:20px auto;
+  width:80%;
+  background-color:#F8F9F9 ;
+  padding-top:25px;
+
+}
+
+mat-form-field
+{
+ width:100%;
+ font-size:15px;
+}
+.mainHeading
+{
+  font-size: 40px;
+  color:#2E86C1;
+  font-weight: 500;
+  margin-left:20px;
+}
+.subContent
+{
+  font-size:25px;
+}
+.subText
+{
+  opacity: 0.9;
+}
+mat-icon
+{
+  font-size:30px;
+
+}
+.icon
+{
+  vertical-align: middle;
+}
+a{
+  font-weight: 400;
+}
+a:hover{
+  text-decoration: none;
+}

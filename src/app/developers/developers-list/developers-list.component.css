@@ -1,0 +1,35 @@
+.main
+{
+
+  margin:auto;
+  padding-top: 20px;
+}
+.mat-h1
+{
+  font-size:50px;
+  color:#5B2C6F
+}
+.mat-h3
+{
+  font-size:20px;
+}
+h1{
+  color:#2E86C1;
+  font-weight:700;
+}
+mat-card
+{
+  width:60%;
+  margin:auto;
+  border:1px solid #AED6F1 ;
+}
+.userimage
+{
+  width:250px;
+  border-radius:8000px;
+}
+header{
+  position:sticky;
+  top:0px;
+  width:100%
+}

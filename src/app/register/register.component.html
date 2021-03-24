@@ -1,0 +1,62 @@
+<!-- <app-menu></app-menu> -->
+
+<mat-card>
+
+ <mat-toolbar> <h1 class="mainHeading ml-0">Sign Up </h1>  </mat-toolbar>
+  <mat-toolbar> <h3 class="subContent"><span class="icon mr-1"><mat-icon>person</mat-icon>
+    </span>
+  <span>Create Your Account</span></h3>
+  </mat-toolbar>
+  <br><br>
+  <form #userform="ngForm" (ngSubmit)="onregister(userform)">
+    <mat-form-field>
+      <input
+      type="text"
+      name="uname"
+      placeholder="Name"
+      matInput
+      uname="ngModel"
+      [(ngModel)]="userservice.newUser.uname">
+    </mat-form-field>
+    <br><br>
+
+    <mat-form-field>
+      <input
+      type="text"
+      name="email"
+      placeholder="Email"
+      matInput
+      email="ngModel"
+      [(ngModel)]="userservice.newUser.email">
+    </mat-form-field>
+    <p>This site uses Gravatar so if you want a profile image, use a Gravatar email</p>
+
+    <mat-form-field>
+      <input
+      type="password"
+      name="password"
+      matInput
+      password="ngModel"
+      [(ngModel)]="userservice.newUser.password"
+      placeholder="Password"
+      >
+    </mat-form-field>
+    <br><br>
+    <mat-form-field>
+      <input
+      type="password"
+      name="cpassword"
+      matInput
+      placeholder="Confirm Password">
+    </mat-form-field>
+
+    <br><br>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+  <br>
+  <br>
+  <p>Already have an account? <a routerLink="/login">Sign In</a></p>
+
+
+</mat-card>

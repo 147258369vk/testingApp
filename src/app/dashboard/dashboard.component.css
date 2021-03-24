@@ -1,0 +1,46 @@
+mat-card
+{
+  width: 80%;
+  margin:auto;
+  margin-top:25px;
+}
+
+.heading
+{
+  font-size:30px;
+  font-weight: 500;
+  color:#2E86C1 ;
+}
+mat-icon
+{
+  font-size:30px;
+  vertical-align: middle;
+}
+.user
+{
+  font-size:25px;
+  vertical-align: middle;
+}
+.btnstyle
+{
+  background-color: #F2F3F4  ;
+  font-size:15px;
+
+}
+.fa{
+color:#3498DB;
+}
+table
+{
+  width:40%
+}
+.subHeading
+{
+  font-weight:400;
+}
+.btndel
+{
+  background-color: #E74C3C ;
+  color:#F8F9F9;
+  font-size:20px;
+}
